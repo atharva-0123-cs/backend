@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.13.1",
+    "cachegoose": "^8.0.0",
     "hono": "^4.6.3",
     "mongodb": "^6.9.0",
     "mongoose": "^8.7.0",
