@@ -1,14 +1,17 @@
-
 import mongoose, { Schema } from "mongoose";
 
 const tableSchema = new Schema(
   {
-    text: String,
+    id: Number,
+    title : String,
+    price: Schema.Types.Decimal128,
     description: String,
-    status: { type: Boolean, default: false },
-    dueDate: Date,
+    category: String,
+    image : String,
+    sold: Boolean,
+    dateOfSale: Date,
   },
-  { timestamps: true }
+  {timestamps : true}
 );
 
 const Table = mongoose.models.Table || mongoose.model("Table", tableSchema);
